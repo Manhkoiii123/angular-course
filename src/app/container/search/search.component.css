@@ -19,11 +19,16 @@
 .btn-search {
   padding: 11px 30px;
   background-color: #28282b;
-  margin-left: -5px;
   color: #fff;
 }
 
 .ekart-search-result-for {
   margin: 20px auto;
   padding: 10px 140px;
+}
+.btn-search-disabled {
+  padding: 11px 30px;
+  background-color: #28282b;
+  color: #fff;
+  cursor: not-allowed;
 }
