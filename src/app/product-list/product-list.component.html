@@ -1,5 +1,13 @@
-<p>name: {{ product.name }}</p>
-<p>price: {{ product.price }}</p>
-<p>color: {{ product.color }}</p>
-<p>discount price: {{ getDiscountPrice() }}</p>
-<p>in stock: {{ product.inStock > 0 ? "yes" : "no" }}</p>
+<div class="product-container">
+  <p>name: {{ product.name }}</p>
+  <p>price: {{ product.price }}</p>
+  <p>color: {{ product.color }}</p>
+  <p>discount price: {{ getDiscountPrice() }}</p>
+  <p>in stock: {{ product.inStock > 0 ? "yes" : "no" }}</p>
+  <button [disabled]="!(product.inStock > 0)">Buy</button>
+  <input type="text" (input)="onNameChange($event)" />
+  <p>{{ name }}</p>
+  <button (click)="decrement()">-</button>
+  <span>{{ addToCart }}</span>
+  <button (click)="increment()">+</button>
+</div>
