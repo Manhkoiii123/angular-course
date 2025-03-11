@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'product-list',
-  templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.css'],
+  selector: 'app-container',
+  templateUrl: './container.component.html',
+  styleUrls: ['./container.component.css'],
 })
-export class ProductListComponent {
+export class ContainerComponent {
   addToCart: number = 0;
+  listOfString: string[] = ['manh', 'thang', 'tuan'];
   name: string = 'manh';
   product = {
     name: 'Laptop',
