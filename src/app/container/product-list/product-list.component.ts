@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Product } from 'src/app/Models/Product';
 
 @Component({
   selector: 'product-list',
@@ -598,6 +599,7 @@ export class ProductListComponent {
       slug: 'michael-feburary-sk8-hi',
     },
   ];
+  selectedProduct: Product;
   totalProductCount: number = this.products.length;
   inStockProductCount: number = this.products.filter(
     (product) => product.is_in_inventory
